@@ -27,3 +27,16 @@ This assignment should have proper folder structure.
 # Assighnment Two
 
 1. Crud Operations using Redux - Saga.
+
+# Assighnment Three
+
+1. Notifications -
+	a. Remote notifications
+	b. Local notification
+
+# Assighnment Four
+
+1. Build a chat application for minimum 2 users, where they can communicate with messages, (media is optional). On receiving the message, user should be notified.
+2. Libraries - Redux, Redux Persist, RNSecureStorage
+
+
