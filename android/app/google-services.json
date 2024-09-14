@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "430943229296",
+    "project_id": "rnapplication-dfc5d",
+    "storage_bucket": "rnapplication-dfc5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430943229296:android:7e74e466000fee0802ebb5",
+        "android_client_info": {
+          "package_name": "com.rnassighnment"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYLS5OunvVHeaUQRRqYChpi_hvV0WdE4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
