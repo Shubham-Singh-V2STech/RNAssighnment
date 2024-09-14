@@ -9,6 +9,7 @@ import DrawerNavigator from './src/navigation/DrawerNavigator';
 import { PersistGate } from 'redux-persist/integration/react';
 import messaging from '@react-native-firebase/messaging';
 import PushNotification from 'react-native-push-notification';
+import { PermissionsAndroid, Platform } from 'react-native';
 
 function App(): React.JSX.Element {
 
@@ -47,6 +48,9 @@ function App(): React.JSX.Element {
   };
 
   useEffect(() => {
+
+    requestNotificationPermission();
+    
     // Create notification channel (Android-specific)
     PushNotification.createChannel(
       {
@@ -74,6 +78,24 @@ function App(): React.JSX.Element {
       unsubscribeTokenRefresh();
     };
   }, []);
+
+const requestNotificationPermission = async () => {
+  if (Platform.OS === 'android' && Platform.Version >= 33) {
+    try {
+      const granted = await PermissionsAndroid.request(
+        PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
+      );
+
+      if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+        console.log('Notification permission granted');
+      } else {
+        console.log('Notification permission denied');
+      }
+    } catch (err) {
+      console.warn(err);
+    }
+  }
+};
 
   return (
     <SafeAreaView style={{ flex: 1 }}>
