@@ -1,4 +1,3 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Assighnment One
 
@@ -31,8 +30,8 @@ This assignment should have proper folder structure.
 # Assighnment Three
 
 1. Notifications -
-	a. Remote notifications
-	b. Local notification
+	- Remote notifications
+	- Local notification
 
 # Assighnment Four
 
