@@ -1,0 +1,3 @@
+- Fixed crash on login screen
+- Improved push notification handling
+- Added support for dark mode

@@ -7,7 +7,9 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest"
+    "test": "jest",
+    "release": "react-native run-android --mode=release",
+    "release:testfairy": "chmod +x deploy.sh && ./deploy.sh"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.0.0",
