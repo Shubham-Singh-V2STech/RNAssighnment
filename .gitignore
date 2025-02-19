@@ -40,6 +40,12 @@ node_modules/
 npm-debug.log
 yarn-error.log
 
+# 5.1 Add to .gitignore
+*.jks
+*.keystore
+*.apk
+android/local.properties
+
 # fastlane
 #
 # It is recommended to not store the screenshots in the git repo. Instead, use fastlane to re-generate the
